@@ -1,0 +1,9 @@
+.mapContainer {
+	@apply w-full h-full flex justify-center items-center;
+}
+
+.map {
+	@apply border border-black relative;
+	width: 60%;
+	height: 50%;
+}
