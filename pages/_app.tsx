@@ -1,16 +1,31 @@
-import '../styles/globals.css'
+import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
-import { Wrapper, Status } from "@googlemaps/react-wrapper";
+import ScrollToTop from "../components/scrollToTop";
+import Navbar from "../components/navbar";
+import Home from "../components/home";
+import Free from "../components/free";
+import Clients from "../components/clients";
+import Release from "../components/release";
+import Like from "../components/like";
+import SignUp from "../components/signUp";
+import Footer from "../components/footer";
+import SuperRare from "../components/superRare";
 
 function App({ Component, pageProps }: AppProps) {
-    const render = (status: Status) => {
-        return <h1>{status}</h1>;
-    };
 
   return (
-      <Wrapper apiKey="AIzaSyCubd3LJdqByD_eySPXbuXcE_BkkTRHSpc" render={render}>
-        <Component {...pageProps} />
-      </Wrapper>
+      <div className={"app-container"}>
+         <ScrollToTop />
+         <Navbar />
+         <Home />
+         <Free />
+         <Clients />
+            <SuperRare />
+         <Release />
+         <Like />
+         <SignUp />
+         <Footer />
+      </div>
   )
 }
 

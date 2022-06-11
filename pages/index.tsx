@@ -1,14 +1,14 @@
 import type { NextPage } from "next";
 import styles from "./home.module.scss";
-import Map from "../components/parkourMap";
+import Header from "../components/header/header";
+
 
 const Home: NextPage = () => {
     return (
-        <div className={styles.mapContainer}>
-            <div className={styles.map}>
-                <Map/>
-            </div>
-        </div>
+        <>
+            <Header/>
+        </>
+
     );
 };
 
