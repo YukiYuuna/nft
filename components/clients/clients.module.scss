@@ -8,3 +8,15 @@
   text-align: center;
 }
 
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+
+  .client {
+    &:nth-of-type(5) {
+      display: none;
+    }
+    img {
+      height: 1.5rem;
+    }
+  }
+}
+

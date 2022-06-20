@@ -4,10 +4,7 @@ import Image from "next/image";
 const Header = () => {
 
     return (
-        <div className={`${styles.header}`}>
-            <div className={`${styles.menuArea}`}>
-            </div>
-        </div>
+        <div> </div>
     )
 }
 

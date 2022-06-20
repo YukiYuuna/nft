@@ -32,7 +32,6 @@
 
 .button {
   color: var(--accent-color1);
-  background-color: var(--background);
   font-weight: bold;
   padding: 1rem;
   border-radius: 2rem;
@@ -42,8 +41,6 @@
       rgba(255,255,255,0)
     ),
   linear-gradient(101deg, var(--pink), var(--orange));
-  background-origin: border-box;
-  background-clip: content-box, border-box;
   transition: 0.5s ease-in-out;
   box-shadow: 2px 1000px 1px var(--background) inset;
   cursor: pointer;
@@ -78,3 +75,44 @@
   left: 40%;
   background-color: var(--orange);
 }
+
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  .home {
+    padding: 1rem;
+    position: relative;
+    overflow-x: hidden;
+    margin-top: 1rem;
+  }
+
+  .container {
+    font-size: 16px;
+    grid-template-columns: 0.7fr;
+  }
+
+  .image-container {
+    position: absolute;
+    right: -10%;
+    top: 30%;
+  }
+
+  .image {
+    img {
+      height: 10rem;
+    }
+  }
+
+  .ellipse {
+    height: 6rem;
+    width: 6rem;
+    filter: blur(30px);
+  }
+
+  .pink {
+    right: 10%;
+  }
+  .orange {
+    left: -5%;
+  }
+}
+

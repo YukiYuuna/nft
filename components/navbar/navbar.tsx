@@ -1,10 +1,16 @@
-import React, {useState} from 'react';
+import React, {FC, useState} from 'react';
 import logo from '../../public/logo.png';
-import Image from 'next/image'
-import styles from './navbar.module.scss'
+import Image from 'next/image';
+import styles from './navbar.module.scss';
+import { ImSun } from "react-icons/im";
+import { BsFillMoonFill } from "react-icons/bs";
 
-const Navbar = () => {
-    const [navState, setNavState] = useState<boolean>(false)
+interface Props {
+    changeTheme: any;
+    currentTheme: string;
+}
+
+const Navbar:FC<Props> = ({changeTheme, currentTheme}) => {
 
     return (
         <nav className={styles.nav}>
@@ -31,6 +37,11 @@ const Navbar = () => {
                         </li>
                         <li>
                             <a href={"#"}> Sign up </a>
+                        </li>
+                        <li onClick={changeTheme}>
+                            {currentTheme === "dark"
+                                ? (<ImSun className={styles.light}/> )
+                                : (<BsFillMoonFill className={styles.dark}/>)}
                         </li>
                     </ul>
                 </div>

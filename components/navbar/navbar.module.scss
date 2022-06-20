@@ -1,4 +1,3 @@
-
 .nav {
   display: flex;
   justify-content: space-between;
@@ -31,4 +30,29 @@
   }
 }
 
+.light {
+  color: yellow;
+}
 
+.dark {
+  color: black;
+}
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  .nav {
+    position: relative;
+    padding: 1rem 2rem;
+  }
+
+  .links {
+    flex-direction: column;
+    li {
+      a {
+        color: var(--background);
+      }
+      &:last-of-type {
+        display: none;
+      }
+    }
+  }
+}

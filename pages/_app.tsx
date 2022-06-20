@@ -7,23 +7,39 @@ import Free from "../components/free";
 import Clients from "../components/clients";
 import Release from "../components/release";
 import Like from "../components/like";
-import SignUp from "../components/signUp";
 import Footer from "../components/footer";
 import SuperRare from "../components/superRare";
+import {useState} from "react";
+
+// export async function getServerSideProps(ctx: any) {
+//     if (!ctx.req.cookies.kcToken) {
+//         return {
+//             redirect: {
+//                 destination: "/login"
+//             }
+//         };
+//     }
+//
+//     return { props: {} };
+// }
 
 function App({ Component, pageProps }: AppProps) {
+    const [theme, setTheme] = useState("dark");
+
+    const changeTheme = () => {
+        theme === "dark" ? setTheme("light") : setTheme("dark")
+    }
 
   return (
-      <div className={"app-container"}>
+      <div className={"app-container"} data-theme={theme}>
          <ScrollToTop />
-         <Navbar />
+         <Navbar changeTheme={changeTheme} currentTheme={theme} />
          <Home />
          <Free />
-         <Clients />
-            <SuperRare />
+         <SuperRare />
          <Release />
          <Like />
-         <SignUp />
+          <Clients />
          <Footer />
       </div>
   )

@@ -4,7 +4,6 @@ import Card from "../cards";
 import super1 from '../../public/super1.png'
 import release2 from '../../public/release2.png'
 import styles from './free.module.scss'
-import toto from '../../public/toto-nft.jpg'
 
 const Free = () => {
 
@@ -38,7 +37,7 @@ const Free = () => {
                 </div>
                 <div className={styles.card2}>
                     <Card
-                        image={toto}
+                        image={release2}
                         series="Toto"
                         title="Na toto kura"
                         price={99999}

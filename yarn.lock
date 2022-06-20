@@ -17,6 +17,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.9.0":
+  version "7.18.3"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.18.3.tgz#c7b654b57f6f63cf7f8b418ac9ca04408c4579f4"
+  integrity sha512-38Y8f7YUhce/K7RMwTp7m0uCumpv9hZkitCbBClqQIow1qSbCvGkcegKOXpEWCQLfWmevgRiWokZ1GkpfhbZug==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@eslint/eslintrc@^1.2.1":
   version "1.2.1"
   resolved "https://registry.npmjs.org/@eslint/eslintrc/-/eslintrc-1.2.1.tgz#8b5e1c49f4077235516bc9ec7d41378c0f69b8c6"
@@ -152,6 +159,25 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
+
+"@react-keycloak/core@^3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@react-keycloak/core/-/core-3.2.0.tgz#e46f1951b0d7873f7f2fcd73dd0c270cb0b18db8"
+  integrity sha512-1yzU7gQzs+6E1v6hGqxy0Q+kpMHg9sEcke2yxZR29WoU8KNE8E50xS6UbI8N7rWsgyYw8r9W1cUPCOF48MYjzw==
+  dependencies:
+    react-fast-compare "^3.2.0"
+
+"@react-keycloak/ssr@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@react-keycloak/ssr/-/ssr-3.3.0.tgz#e757a686efd3156ecfa3a73b03b2ebb97eeea03c"
+  integrity sha512-S+QArvPgM34rb84M7/+0jf2nSxOzG3vrAwkuaiXb19FosomMSYBaTrpPjXS45eUzHQuX4IOWdUTx9SZY4EmLTw==
+  dependencies:
+    "@babel/runtime" "^7.9.0"
+    "@react-keycloak/core" "^3.2.0"
+    detect-node "^2.0.4"
+    hoist-non-react-statics "^3.3.2"
+    js-base64 "^3.4.5"
+    js-cookie "^2.2.1"
 
 "@react-native-community/google-signin@^5.0.0":
   version "5.0.0"
@@ -495,6 +521,11 @@ concat-map@0.0.1:
   resolved "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
 
+cookie@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.5.0.tgz#d1f5d71adec6558c58f389987c366aa47e994f8b"
+  integrity sha512-YZ3GUyn/o8gfKJlnlX7g7xq4gyO6OSuhGPKaaGssGB2qgDUS0gPgtTvoyZLTt9Ab6dC4hfc9dV5arkvc/OCmrw==
+
 core-js-pure@^3.20.2:
   version "3.22.0"
   resolved "https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.22.0.tgz#0eaa54b6d1f4ebb4d19976bb4916dfad149a3747"
@@ -572,6 +603,11 @@ dequal@^2.0.2:
   version "2.0.2"
   resolved "https://registry.npmjs.org/dequal/-/dequal-2.0.2.tgz#85ca22025e3a87e65ef75a7a437b35284a7e319d"
   integrity sha512-q9K8BlJVxK7hQYqa6XISGmBZbtQQWVXSrRrWreHC94rMt1QL/Impruc+7p2CYSYuVIUr+YCt6hjrs1kkdJRTug==
+
+detect-node@^2.0.4:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/detect-node/-/detect-node-2.1.0.tgz#c9c70775a49c3d03bc2c06d9a73be550f978f8b1"
+  integrity sha512-T0NIuQpnTvFDATNuHN5roPwSBG83rFsuO+MXXH9/3N1eFbn4wcPjttvjMLEPWJ0RGUYgQE7cGgS3tNxbqCGM7g==
 
 detective@^5.2.0:
   version "5.2.0"
@@ -1093,6 +1129,13 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
+hoist-non-react-statics@^3.3.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
+  integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
+  dependencies:
+    react-is "^16.7.0"
+
 ignore@^5.2.0:
   version "5.2.0"
   resolved "https://registry.npmjs.org/ignore/-/ignore-5.2.0.tgz#6d3bac8fa7fe0d45d9f9be7bac2fc279577e345a"
@@ -1265,6 +1308,21 @@ jquery@^3.4.1:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
   integrity sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==
+
+js-base64@^3.4.5:
+  version "3.7.2"
+  resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-3.7.2.tgz#816d11d81a8aff241603d19ce5761e13e41d7745"
+  integrity sha512-NnRs6dsyqUXejqk/yv2aiXlAvOs56sLkX6nUdeaNezI5LFFLlsZjOThmwnrcwh5ZZRwZlCMnVAY3CvhIhoVEKQ==
+
+js-cookie@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-2.2.1.tgz#69e106dc5d5806894562902aa5baec3744e9b2b8"
+  integrity sha512-HvdH2LzI/EAZcUwA8+0nKNtWHqS+ZmijLA30RwZA0bo7ToCckjK5MkGhjED9KoRcXO6BaGI3I9UIzSA1FKFPOQ==
+
+js-cookie@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-3.0.1.tgz#9e39b4c6c2f56563708d7d31f6f5f21873a92414"
+  integrity sha512-+0rgsUXZu4ncpPxRL+lNEptWMOWl9etvPHc/koSRp6MPwpRYAhmk0dUG00J4bxVV3r9uUzfo24wW0knS07SKSw==
 
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"
@@ -1683,6 +1741,11 @@ react-dom@18.0.0:
     loose-envify "^1.1.0"
     scheduler "^0.21.0"
 
+react-fast-compare@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-3.2.0.tgz#641a9da81b6a6320f270e89724fb45a0b39e43bb"
+  integrity sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==
+
 react-google-signin@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/react-google-signin/-/react-google-signin-1.0.3.tgz#c5fa8bf5f580038c2305f57b25ed8ab760e60c04"
@@ -1697,7 +1760,7 @@ react-icons@^4.4.0:
   resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.4.0.tgz#a13a8a20c254854e1ec9aecef28a95cdf24ef703"
   integrity sha512-fSbvHeVYo/B5/L4VhB7sBA1i2tS8MkT0Hb9t2H1AVPkwGfVHLJCqyr2Py9dKMxsyM63Eng1GkdZfbWj+Fmv8Rg==
 
-react-is@^16.13.1:
+react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
